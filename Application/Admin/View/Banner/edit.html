@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <include file="Public/header" />
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>编辑广告</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal" action="{:U('admin/banner/doEdit')}" method="post" target="_self" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="{$res['id']}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">标题</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="title" value="{$res['title']}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">图片</label>
+                                <div class="col-sm-5">
+                                    <input type="file" name="image">
+                                    <?php if(!$res['image']){
+                                        echo 暂无缩略图;
+                                    }?>
+                                    <img src="http://dbshop.com/{$res.image}" width="100">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">URL</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="url" value="{$res['url']}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <button class="btn btn-white" type="reset">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <include file="Public/footer" />
+</body>
+
+</html>

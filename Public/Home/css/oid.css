@@ -1,0 +1,459 @@
+body,html,div,p,a,b,span,img,input,button {
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	font-size: 625%;
+}
+.oid-address {
+	font-size: 0;
+	background-color: #f7f7f7;
+	padding-bottom: 0.15rem;
+}
+.oid-address>p {
+    color: #9a9a9a;
+	font-size: 0.16rem;
+	padding: 0.12rem 0.15rem;
+}
+.goods-address {
+	position: relative;
+	font-size: 0;
+	background: #fff;
+	border: 2px solid #0aa082;
+	width: 100%;
+	box-sizing:border-box;
+	padding: 0.15rem 0.4rem 0.15rem 0.2rem;
+}
+.goods-address>p {
+	display: block;
+	font-size:0.12rem; 
+	width: 100%;
+	color: #505050;
+	margin-top: 0.06rem;
+    background-color: #fff;
+}
+.goods-address>p>span {
+	font-size: 0.13rem;
+	font-weight: 525;
+}
+.goods-address>p:first-child {
+	padding-bottom: 0.06rem;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 0.14rem;
+}
+.goods-address>i {
+	position: absolute;
+	right: 0.13rem;
+	font-size: 0.20rem;
+	color: #e4e4e4;
+	top: 0.35rem;
+}
+.new-oid {
+	font-size: 0.16rem;
+	padding: 0.12rem 0.15rem 0.12rem 0.15rem;
+	background:#fff;
+	color: #5c5c5c;
+}
+.oid-exp {
+    display: block;
+    font-size: 0.12rem;
+    color: #9a9a9a;
+    margin-top: 0.06rem;
+}
+.oid-things {
+	font-size: 0;
+	border-bottom:5px solid #f7f7f7;
+}
+.oid-things>div {
+	border-top: 1px solid #f7f7f7;
+}
+.list-oid {
+	font-size: 0;
+	background: #fff;
+	padding: 0.1rem 0.15rem;
+}
+.list-oid>span {
+	font-size: 0.14rem;
+	color: #505050;
+}
+.list-oid>span:last-child {
+	float: right;
+}
+.labelId {
+	display: inline-block;
+    width:0.14rem;
+    height:0.14rem;
+    background: #fff;
+    border:1px solid #bdbdbd;
+    position: relative;
+    top: 0.02rem;
+    margin-right: 0.05rem;
+}
+.labelId:after, .label-select:after {
+    content: '\00a0';
+    display: inline-block;
+    border: 2px solid #bdbdbd;
+    border-top-width: 0;
+    border-right-width: 0; 
+    width: 0.10rem;
+    height: 0.04rem;
+    -webkit-transform: rotate(-50deg);
+    position: absolute;
+    top:0.033rem;
+    left:0.014rem;
+}
+.select-oid>span {
+	vertical-align: top;
+}
+.select-oid>input {
+	display: block;
+	width: 100%;
+	padding: 0.1rem ;
+	font-size: 0.1rem;
+	box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #5c5c5c;
+    border: 1px solid #e4e4e4;
+}
+.select-oid>p {
+	display: block;
+	font-size: 0.12rem;
+	color: #9a9a9a;
+	margin-top: 0.06rem;
+}
+.oid-ways {
+	background: #f7f7f7;
+	padding: 0.27rem 0 0.8rem 0;
+}
+.oid-ways>p {
+	display: block;
+	padding:0 0.15rem 0.12rem 0.15rem;
+	font-size: 0.12rem;
+	color: #5c5c5c;
+}
+.ways-list>span {
+	display: inline-block;
+}
+.ways-list>span>img {
+	width: 0.22rem;
+	height: 0.22rem;
+	margin-right: 0.06rem;
+	vertical-align: bottom;
+}
+.ways-list>span:first-child {
+	vertical-align: bottom;
+}
+.ways-list>span:last-child {
+    width:0.15rem;
+    height:0.15rem;
+    background: #fff;
+    border:1px solid #0aa082;
+    border-radius: 100%;
+    position: relative;
+    top: 0.02rem;
+} 
+.clearfix::after {
+	display: block;
+	content:"";;
+	clear: both;
+	height: 0;
+}
+.piao-new {
+	padding: 0.1rem 0.15rem;
+	border-bottom:1px solid #e4e4e4;
+    background: #fff;
+    margin-bottom: 0.15rem;
+}
+.coupon-box .piao-new>span {
+	display: inline-block;
+	font-size: 0.14rem;
+	color: #9a9a9a;
+	float: left;
+	position: relative;
+}
+.piao-new .one-make>b {
+	position: absolute;
+	display: inline-block;
+	left: 0.25rem;
+	top: -0.02rem;
+	font-weight: 520;
+	color: #494949;
+	font-size: 0.14rem;
+	width: 1rem;
+	margin-right: 0.12rem;
+} 
+.coupon-box .piao-new .one-make {
+	width:0.15rem;
+    height:0.15rem;
+    background: #fff;
+    border:1px solid #0aa082;
+    border-radius: 100%;
+    position: relative;
+    top: 0.02rem;
+    margin-right: 0.15rem;
+}
+.one-make {
+	/*margin-left: 0.15rem;*/
+}
+.one-way>span:last-child:after {
+    content: '';
+    display: inline-block;
+    background: #0aa082;
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 100%;
+    position: absolute;
+    top:0.03rem;
+    left:0.03rem;
+}
+.box-foot {
+	position: fixed;
+	bottom: 0;
+	font-size: 0;
+	width: 100%;
+	background: $fff;
+}
+.cars-footer {
+	font-size: 0;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	display: flex;
+	width: 100%;
+}
+.cars-footer>div {
+	flex:3;
+	background: #fff;
+}
+a {
+	text-decoration: none;
+}
+.select-show {
+	background: #fff;
+	flex:1;
+	text-align: right;
+	margin-right: 0.1rem;
+}
+
+.select-show>b {
+    color: #fff;
+    font-size: 0.16rem;
+	line-height: 0.1rem;
+    display: block;
+    margin: 0.1rem 0;
+}
+.select-show>p {
+    display: block;
+	font-size: 0.1rem;
+	color: #fff;
+	line-height: 0.1rem;
+}
+.cars-footer>a {
+	flex:1;
+	text-align: center;
+	font-size: 0.15rem;
+    background-color: #fff;
+    color: #fff;
+}
+.new-select>b {
+    color: #f05f50;
+}
+.new-select>p {
+	color: #9a9a9a;
+}
+.cars-footer>a {
+    background-color: #9a9a9a;
+    color: #fff;
+}
+.cars-footer .car-newtrue {
+	background: #f05f50;
+	color: #fff;
+}
+.all-select {
+	padding: 0 0 0 0.15rem ;
+}
+.select-show>b {
+	font-size: 0.16rem;
+    color: #f05f50;
+    display: inline-block;
+}
+.coupon-new {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom:0;
+}
+.coupon-box {
+	display: none;
+	background: #fff;
+	font-size:0;
+}
+.coupon-title {
+	font-size: 0.16rem;
+	padding: 0.12rem 0.15rem;
+	color: #9a9a9a;
+	background: #f7f7f7;
+}
+.coupon-title>i {
+	position: absolute;
+	right: 0.15rem;
+	top: 0.14rem;
+	display: inline-block;
+	width: 0.16rem;
+	height: 0.16rem;
+}
+.coupon-title>i:before {
+	display: block;
+    width: 0.02rem;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    background: #9a9a9a;
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+}
+.coupon-title>i:after {
+	display: block;
+    width: 0.02rem;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    background: #9a9a9a;
+    -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+}
+.coupon-content {
+	background: #fff;
+	padding: 0.12rem 0.15rem;
+	width: 100%;
+	display: flex;
+	box-sizing:border-box;
+	border-bottom:0.1rem solid #f7f7f7;
+}
+.coupon-content>input, .coupon-content>button {
+	display: inline-block;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	vertical-align: middle;
+}
+.coupon-content>input {
+	flex:4;
+	font-size: 0.14rem;
+	padding: 0 0.08rem;
+	color: #e4e4e4;
+	border:1px solid #e4e4e4;;
+}
+.coupon-content>input:focus{
+	outline: none;
+}
+.coupon-content>button {
+	flex:1;
+	background-color: #bdbdbd;
+    color: #fff;
+    text-align: center;
+    border:1px solid #bdbdbd;
+	height: 0.38rem;
+}
+.coupon-have {
+	font-size: 0;
+	padding: 0.2rem 0;
+	position: relative;
+	text-align: center;
+	height: 1rem;
+}
+.coupon-have>a {
+	display: block;
+	color: #5c5c5c;
+    text-decoration: underline;
+    font-size: 0.12rem;
+}
+.coupon-have>a:last-child {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0.15rem;
+	text-align: center;
+}
+.coupon-have>a>span {
+	color: #5c5c5c;
+    font-size: 0.12rem;
+}
+.piao-tab {
+	margin-bottom: 0.15rem;
+	font-size: 0;
+	padding: 0.1rem 0.15rem;
+	background: #fff;
+}
+.biao-zhu {
+	display: inline-block;
+	color: #9a9a9a;
+	font-size: 0.14rem;
+	width: 0.85rem;
+}
+.no-body>div, .no-body>span {
+	display: inline-block;
+}
+.no-body>div>p {
+	display: inline-block;
+	padding-right: 0.15rem;
+	font-size: 0.14rem;
+	color: #494949;
+}
+.piao-tab>p {
+	display: inline-block;
+	padding-right: 0.15rem;
+	font-size: 0.14rem;
+	color: #494949;
+}
+.tab-set, .newtab-set>span  {
+	width:0.15rem;
+    height:0.15rem;
+    background: #fff;
+    border:1px solid #0aa082;
+    border-radius: 100%;
+    position: relative;
+    top: 0.02rem;
+    display: inline-block;
+    margin-right: 0.04rem;
+}
+.tab-set:after{
+	content: '';
+    display: inline-block;
+    background: #fff;
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 100%;
+    position: absolute;
+    top:0.03rem;
+    left:0.03rem;
+}
+.newtab-set>span:after {
+	content: '';
+    display: inline-block;
+    background: #0aa082;
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 100%;
+    position: absolute;
+    top:0.03rem;
+    left:0.03rem;
+}
+.piaolist-white {
+	color: #fff;
+}
+.piaolist-text {
+	display: inline-block;
+}
+.piaolist-text>input {
+    border:0;
+    color: #494949;
+    font-size: 0.14rem;
+    width: 2rem;
+}
+.piaolist-text>input:focus {
+	outline: none;
+}
+.hide {
+	display: none;
+}

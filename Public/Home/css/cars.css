@@ -1,0 +1,185 @@
+.car>a>i {
+	vertical-align: bottom;
+}
+.car>a {
+	color: #fff;
+    font-weight: 538;
+    margin-left: 0.1rem;
+}
+.car>a>i:last-child {
+	font-size: 0.25rem;
+}
+.car>a>i:first-child {
+	font-size: 0.22rem;
+}
+.cars-list {
+	background: #fff;
+	font-size: 0.14rem;
+	color: #5c5c5c;
+	vertical-align: bottom;
+}
+.all-select {
+	background: #fff;
+	font-size: 0.14rem;
+	color: #5c5c5c;
+	vertical-align: bottom;
+}
+.labelId {
+	vertical-align: bottom;
+	display: inline-block;
+    width:0.15rem;
+    height:0.15rem;
+    background: #fff;
+    border:1px solid #bdbdbd;
+    position: relative;
+    margin-right: 0.1rem;
+}
+.label-select {
+	position: relative;
+	vertical-align: bottom;
+	display: inline-block;
+    width:0.15rem;
+    height:0.15rem;
+    margin-right: 0.1rem;
+	border:1px solid #0aa082;
+    background-color: #0aa082;
+}
+
+.labelId:after, .label-select:after {
+    content: '\00a0';
+    display: inline-block;
+    border: 2px solid #fff;
+    border-top-width: 0;
+    border-right-width: 0; 
+    width: 0.10rem;
+    height: 0.04rem;
+    -webkit-transform: rotate(-50deg);
+    position: absolute;
+    top:0.035rem;
+    left:0.017rem;
+}
+.intro-jinumber {
+	display: inline-block;
+	margin-right: 8px;
+}
+.intro-jinumber>input {
+	padding: 5px 8px;
+}
+.cars-buy {
+	position: relative;
+	padding: 0.12rem 0.15rem;
+	background: #fff;
+	font-size: 0;
+	color: #5c5c5c;
+	vertical-align: bottom;
+	border-bottom: 1px solid #e4e4e4;
+}
+.cars-buy>div {
+	display: inline-block;
+	height: 0.7rem;
+	float: left;
+}
+.cars-buy>div:first-child {
+	margin-right: 0.1rem;
+    line-height: 0.7rem;
+}
+.car-list {
+	width: 90%;
+	vertical-align: top;
+}
+.car-list>img {
+	margin-left: 0.05rem;
+	width: 0.7rem;
+	height: 0.7rem;
+}
+.car-list>img, .car-list>div {
+	display: inline-block;
+	vertical-align: top;
+}
+.car-list>div {
+	width: 60%;
+	margin-left: 0.15rem;
+}
+.car-list>div>p {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.05rem;
+	font-size: 0.13rem;
+}
+.car-list>div>p>a {
+	float: right;
+	position: absolute;
+	right: 0.15rem;
+	color: #5c5c5c;
+}
+.car-list .p-cars {
+    font-size: 0.12rem;
+}
+.cars-content>span {
+	position: absolute;
+	bottom: 0.15rem;
+	right: 0.15rem;
+	color: #f05f50;
+	font-size: 0.15rem;
+}
+.box-foot {
+	position: absolute;
+	bottom: 0.02rem;
+	font-size: 0;
+	width: 100%;
+	box-sizing:border-box;
+}
+.cars-footer {
+	font-size: 0;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	display: flex;
+	width: 100%;
+	background: #fff;
+}
+.cars-footer>div {
+	flex:3;
+}
+.select-show {
+	background: #fff;
+	flex:1;
+	text-align: right;
+	margin-right: 0.1rem;
+}
+.select-show>b {
+    color: #fff;
+    font-size: 0.16rem;
+	line-height: 0.1rem;
+    display: block;
+    margin: 0.1rem 0;
+}
+.select-show>p {
+    display: block;
+	font-size: 0.1rem;
+	color: #fff;
+	line-height: 0.1rem;
+}
+.cars-footer>a {
+	flex:1;
+	text-align: center;
+	font-size: 0.15rem;
+    background-color: #fff;
+    color: #fff;
+}
+.new-select>b {
+    color: #f05f50;
+}
+.new-select>p {
+	color: #9a9a9a;
+}
+.cars-footer>a {
+    background-color: #9a9a9a;
+    color: #fff;
+}
+.cars-footer .car-newtrue {
+	background: #f05f50;
+	color: #fff;
+}
+.haha {
+	padding: 0 0;
+}

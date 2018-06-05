@@ -1,0 +1,153 @@
+body,html,div,img,p,button,a,span,h1 {
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	font-size: 625%;
+}
+.header {
+	font-size: 0;
+	text-align: center;
+	padding:0 0.18rem;
+	border-bottom: 1px solid #e5e5e5
+}
+.header>h1 {
+	text-align: center;
+	position: relative;
+	font-size: 0.18rem;
+	font-weight: 560;
+	color: #000;
+	line-height: 0.45rem;
+    vertical-align: bottom;
+}
+a {
+	text-decoration: none;
+}
+.header>h1>a {
+	position: absolute;
+	left: 0;
+	top: 0;
+    color: #42bd56;
+    font-size: 0.15rem;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+.box-form {
+	padding: 0.15rem;
+	font-size: 0;
+	position: relative;
+}
+/*.box-form>input:first-child {
+	border-bottom: 0;
+}*/
+.box-form>input {
+	border: 1px solid #ccc;
+	width: 100%;
+	box-sizing:border-box;
+	padding: 0.12rem 0.06rem;
+	font-size: 0.16rem;
+	color: #666;
+	border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 1px solid #ccc;
+}
+.box-form .password {
+	border-top: 0;
+	position: relative;
+}
+.box-form>input:focus {
+	outline: none;
+}
+.newsee {
+	position: absolute;
+	right: 0.25rem;
+	top: 0.59rem;
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.43rem;
+	background: url("../images/ic_pwd_open@2x.png") no-repeat;
+	background-position: center center;
+    background-size: 0.22rem;
+}
+.see {
+	position: absolute;
+	right: 0.25rem;
+	top: 0.59rem;
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.43rem;
+	background: url("../images/ic_pwd_privarie@2x.png") no-repeat;
+	background-position: center center;
+    background-size: 0.22rem;
+}
+.setlogin {
+	display: block;
+	padding: 0.12rem 0;
+	width: 100%;
+	color: #ffffff;
+    background: #17AA52;
+    font-size: 0.16rem;
+    text-align: center;
+    border: 1px solid #17AA52;
+    border-radius: 3px;
+    margin: 0.15rem 0;
+}
+.box-form>a {
+	display: block;
+	font-size: 0.14rem;
+	text-align: center;
+	color: #aaa;
+}
+.box-ways {
+	font-size: 0;
+	text-align: center;
+	margin: 0.16rem 0;
+}
+.box-ways>a {
+	display:inline-block;
+	font-size: 0.15rem;
+	text-align: center;
+}
+.box-ways>a:first-child {
+	margin-right: 0.2rem;
+	color: #551a8b;
+}
+.box-ways>a:last-child {
+	color: #42bd56;
+}
+.hide {
+	display: none;
+}
+.topshow {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.16rem;
+	color: red;
+    padding: 0.2rem 0;
+	position:absolute;
+	animation:mymove 4s infinite;
+	/*-webkit-animation:mymove 5s infinite; */
+}
+.topshow>span {
+	padding: 0.15rem;
+	border-radius: 25px;
+	background: red;
+	color: #fff;
+	font-size: 0.16rem;
+}
+@keyframes mymove
+{
+0% {top:-1rem;}
+50% {top:0.5rem;}
+100%{ top:-1rem;}
+}
+.header>h2 {
+	font-size: 0.4rem;
+	text-align: center;
+    color:#42bd56;
+    margin: 0.3rem 0;
+}
+.new-header {
+	border-bottom: 0;
+}

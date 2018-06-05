@@ -1,0 +1,77 @@
+body,html,div,img,p,button,a,span {
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	font-size: 625%;
+}
+.box-login {
+	padding:0.2rem 0.35rem;
+	font-size: 0;
+}
+.login-img {
+    width: 100%;
+    text-align: center;
+}
+.login-img>img {
+	width: 0.6rem;
+	height: 0.6rem;
+	margin: 0 auto;
+	padding: 0.6rem 0;
+}
+.box-input {
+	padding: 0.1rem 0;
+}
+.box-input>input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 0;
+    font-size: 0.16rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.15rem 0;
+    margin-bottom: 0.3rem;
+}
+.box-input>button {
+	display: block;
+	background-color: #BDBDBD;
+	border: 0;
+	color: #fff;
+	font-size: 0.14rem;
+	width: 100%;
+	padding: 0.16rem 0;
+	border-radius: 4px;
+    margin-bottom: 0.3rem;
+}
+.box-else {
+	text-align: center;
+}
+.box-else>a {
+	color:#9A9A9A;
+	font-size: 0.16rem;
+	display: inline-block;
+	margin-right: 0.22rem;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+.box-else>a>i {
+	display: inline-block;
+	width: 0.22rem;
+	height: 0.22rem;
+	background: url("../images/wechat@2x.png") no-repeat;
+	background-size: cover;
+	vertical-align: top;
+	margin-right: 0.1rem;
+}
+.box-else>a:first-child::after {
+	display: inline-block;
+	content: "";
+	width: 0.01rem;
+	height: 0.17rem;
+    position: absolute;
+    right: -0.115rem;
+    top: 0.03rem;
+    background:#9A9A9A;
+}

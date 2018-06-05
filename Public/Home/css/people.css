@@ -1,0 +1,151 @@
+body,html,div,img,p,button,a,span,h1,em,i,h3 {
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	font-size: 625%;
+	background: #f7f7f7;
+}
+.people-header {
+	font-size: 0;
+	padding: 0 0.15rem;
+	line-height: 0.5rem;
+	background-color: #0aa082;
+}
+.people-header>h1 {
+	font-size: 0.25rem;
+	color: #fff;
+}
+.people-header>h1, .people-header>div, .people-header>h3, .people-header>a {
+	display: inline-block;
+	float: left;
+}
+.people-header>a {
+	color: #fff;
+	font-size: 0.18rem;
+}
+.address {
+	text-align: left;
+	float: left;
+}
+.address>i {
+	transform:rotate(180deg);
+	display: inline-block;
+}
+.people-header>h3 {
+	font-size: 0.18rem;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+	width: 1.18rem;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear:both;
+	height: 0;
+}
+.people-header>div {
+	float: right;
+	position: relative;
+}
+.people-header>div>i {
+	display: inline-block;
+	float:left;
+	font-size: 0.23rem;
+	height: 0.5rem;
+	color: #fff;
+	margin-left: 0.17rem;
+}
+.people-header>div>sup {
+	display: inline-block;
+	float:left;
+	font-size: 0.12rem;
+	position: absolute;
+	right: 0.3rem;
+	color: #fff;
+	top: -0.09rem;
+}
+.people-img {
+	width: 100%;
+	padding: 0.4rem 0 0.25rem 0;
+	text-align: center;
+	font-size: 0;
+	background: #f7f7f7;
+}
+.people-img>img {
+	width: 0.84rem;
+	height: 0.84rem;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+.people-img>span {
+	font-size: 0.14rem;
+	display: block;
+    text-align: center;
+    color: #494949;
+    margin-top: 0.04rem;
+}
+.people-list {
+	font-size: 0;
+	background: #f7f7f7;
+}
+.item-list {
+	padding: 0 0.15rem;
+	border-bottom: 1px solid #e4e4e4;
+	display: block;
+	background: #fff;
+}
+.item-list>a {
+	line-height: 0.45rem;
+	display: block;
+	font-size: 0.16rem;
+	color: #5c5c5c;
+}
+a {
+	text-decoration: none;
+}
+.item-list>a>i {
+	display: inline-block;
+	float: right;
+	font-size: 0.16rem;
+	color: #5c5c5c;
+}
+.about-list {
+	display: flex;
+	font-size: 0;
+	background: #fff;
+}
+.about-list>a {
+	flex:1;
+	font-size: 0;
+	text-align: center;
+	padding: 0.1rem 0;
+}
+.about-list>a>i {
+    font-size: 0.23rem;
+    color: #0aa082;
+    display: block;
+}
+.about-list>a>span {
+	display: block;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #5c5c5c;
+}
+.make-top {
+	font-size: 0;
+	margin-top: 0.13rem;
+}
+.footer {
+	width: 100%;
+	font-size: 0;
+	margin: 0.1rem 0;
+	text-align: center;
+}
+.footer>a {
+	display: inline-block;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #9a9a9a;
+}

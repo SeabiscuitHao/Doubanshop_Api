@@ -1,0 +1,440 @@
+[ 2018-06-04T16:00:23+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-06-04T16:01:26+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-06-04T16:01:34+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Index
+
+[ 2018-06-04T16:02:14+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0018s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:02:52+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tb_goods`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0037s ]
+ERR: Think\Model:getBasicInfo方法不存在！
+
+[ 2018-06-04T16:04:02+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002600s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0010s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:03+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0016s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:29+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0012s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:29+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0036s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:29+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0028s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:30+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0029s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:30+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0010s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:40+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0032s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:40+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0016s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:40+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0005s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:04:40+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Model\GoodsModel::getList() should be compatible with Home\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0033s ]
+ERR: Think\Model:getList方法不存在！
+
+[ 2018-06-04T16:05:07+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-06-04T16:05:31+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006572s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2018-06-04T16:05:47+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0017s ]
+ERR: Think\Model:getBasicInfo方法不存在！
+
+[ 2018-06-04T16:06:10+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0019s ]
+ERR: Think\Model:getBasicInfo方法不存在！
+
+[ 2018-06-04T16:06:48+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0005s ]
+
+[ 2018-06-04T16:06:49+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0008s ]
+
+[ 2018-06-04T16:07:08+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0009s ]
+
+[ 2018-06-04T16:08:41+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0004s ]
+
+[ 2018-06-04T16:22:34+08:00 ] 127.0.0.1 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0005s ]
+
+[ 2018-06-04T16:23:13+08:00 ] 192.168.199.115 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0004s ]
+
+[ 2018-06-04T16:23:42+08:00 ] 192.168.199.115 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0004s ]
+
+[ 2018-06-04T16:23:43+08:00 ] 192.168.199.115 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0004s ]
+
+[ 2018-06-04T16:24:08+08:00 ] 192.168.199.115 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0004s ]
+
+[ 2018-06-04T16:24:20+08:00 ] 192.168.199.202 /index.php/Api/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] A session had already been started - ignoring session_start() F:\www\Zt\Dbshop\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Api\Model\GoodsModel::getList() should be compatible with Api\Model\BaseModel::getList($where = Array, $offset = 0, $limit = 20) F:\www\Zt\Dbshop\Application\Api\Model\GoodsModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tb_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_goods` ORDER BY createtime asc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_tags` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_tags` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_banner` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cache F:\www\Zt\Dbshop\Application\Api\Model\BannerModel.class.php 第 7 行.
+SQL: SELECT * FROM `tb_banner`  [ RunTime:0.0004s ]
+
