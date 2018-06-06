@@ -28,7 +28,7 @@ class CartController extends Controller {
 		);
 		if (empty($id)) {
 			$res['error_no'] = 1;
-			$res['msg'] = '参数错误';
+			$res['msg']      = '参数错误';
 			echo json_encode($res);die();
 		}
 
@@ -47,12 +47,12 @@ class CartController extends Controller {
 		}
 		if ($cart) {
 			$res['error_no'] = 0;
-			$res['msg'] = '';
-			$res['data'] = $data;
+			$res['msg']      = '';
+			$res['data']     = $data;
 			echo json_encode($res);die();
 		} else {
 			$res['error_no'] = 3;
-			$res['msg'] = '添加失败';
+			$res['msg']      = '添加失败';
 			echo json_encode($res);die();
 		}
 	}
@@ -73,6 +73,44 @@ class CartController extends Controller {
 			$res['data']['cart'] = $cartList;
 			echo json_encode($res);
 			die();
+		}
+	}
+
+
+	public function edit() {
+		$res = array(
+			'error_no'	=> 0,
+			'msg'		=> '',
+			'data'		=> array()
+		);
+		$cid 	= I('post.id','');
+		$is_add = I('post.is_add','');
+		if(empty($cid)) {
+			$res['error_no'] = 1;
+			$res['msg']		 = '参数错误';
+			echo json_encode($res);die();
+		}
+		$info = D('Cart')->where(array('id'=>$cid))->find();
+		if ($is_add == 1) {
+			$info['goods_num'] += 1;
+			$save = D('Cart')->where(array('id'=>$cid))->save($info);
+			if ($save) {
+				echo json_encode($res);die();
+			} else {
+				$res['error_no'] = 2;
+				$res['msg']		 = "参数错误";
+				echo json_encode($res);die();
+			}
+		} else {
+			$info['goods_num'] -= 1;
+			$save = D('Cart')->where(array('id'=>$cid))->save($info);
+			if ($save) {
+				echo json_encode($res);die();
+			} else {
+				$res['error_no'] = 2;
+				$res['msg']		 = "参数错误";
+				echo json_encode($res);die();
+			}
 		}
 	}
 

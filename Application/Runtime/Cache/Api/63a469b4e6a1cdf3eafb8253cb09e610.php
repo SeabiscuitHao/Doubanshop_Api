@@ -12,25 +12,23 @@
 <body>
 		<div class="oid-address">
 			<p>收货地址</p>
-		<?php if(is_array($user)): $i = 0; $__LIST__ = $user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="goods-address">
+			<div class="goods-address">
 				<p>
 					收货人：
 					<span>
-					   <?php echo ($vo["username"]); ?>   <?php echo ($vo["phone"]); ?>
+					   <?php echo ($user["username"]); ?>   <?php echo ($user["phone"]); ?>
 					</span>
 				</p>
 				<p>
-					<?php echo ($vo["province"]); ?>/<?php echo ($vo["city"]); ?>/<?php echo ($vo["area"]); ?>
+					<?php echo ($user["province"]); ?>/<?php echo ($user["city"]); ?>/<?php echo ($user["area"]); ?>
 				</p>
 				<i class="iconfont">&#xe63b;</i>
 			</div>
-			<div style="height: 10px">
-			</div><?php endforeach; endif; else: echo "" ;endif; ?>
 		</div>
 	<div class="oid-things">
 	    <p class="new-oid">豆瓣市集</p>
 		<?php if(is_array($orderInfo)): $i = 0; $__LIST__ = $orderInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="list-img clearfix ">
-				<img src="<?php echo ($vo["image"]); ?>" alt="">
+				<img src="http://dbshop.com/<?php echo ($vo["image"]); ?>" alt="">
 				<div class="img-about">
 					<p><?php echo ($vo["goods_name"]); ?></p>
 					<span class="oid-exp"><?php echo ($vo["goods_info"]); ?></span>
@@ -71,13 +69,20 @@
 	</div>
 	<div class="oid-things oid-ways clearfix">
 	    <p>支付方式</p>
-	    <?php if(is_array($pay_type)): $i = 0; $__LIST__ = $pay_type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="list-oid clearfix ways-list one-way">
-		    	<span>
-	                <img src="/Public/Home/images/weixin.png" alt="">
-	                <?php echo ($vo['name']); ?>
-		    	</span>
-		    	<span></span>
-		    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+	    <div class="list-oid clearfix ways-list one-way">
+	    	<span>
+                <img src="/Public/Home/images/weixin.png" alt="">
+	    	    优惠券
+	    	</span>
+	    	<span></span>
+	    </div>
+	    <div class="list-oid clearfix ways-list">
+	    	<span>
+	    	    <img src="/Public/Home/images/zhifubao.png" alt="">
+	    	   小计
+	    	</span>
+	    	<span></span>
+	    </div>
 	</div>
 	<div class="coupon-box ppiao">
 		<div class="coupon-title">
@@ -195,27 +200,6 @@
 			<a href="javascript:void(0)" class="car-newtrue"> 提交订单</a>
 		</div>
 	</div>
-	<script src="/Public/Home/js/oid.js">
-		
-	</script><script type="text/javascript">
-		$(function(){
-			$('.car-newtrue').click(function(){
-				var aid = 2;
-				var oid = <?php echo ($_GET['oid']); ?>;
-				var pid = 1;
-				console.log(oid);
-				$.ajax({
-					url : "<?php echo U('home/order/createorder');?>",
-					type : "post",
-					dataType : "json",
-					data : {aid:aid, oid:oid, pid:pid},
-					success : function(res) {
-						console.log(res);
-					}
-				});
-			});
-		})
-		
-	</script>
+	<script src="/Public/Home/js/oid.js"></script>
 </body>
 </html>

@@ -2,22 +2,7 @@
 namespace Api\Controller;
 use Think\Controller;
 class OrderController extends Controller {
-	public function lists() {
-		$id = session('id');
-		if (empty($id)) {
-			$this->error('请先登录',U('Home/User/login'));
-		}
-		$lists = D('Order')->where(array('user_id'=>$id))->select();
-		$res = array();
-		foreach ($lists as $key => $value) {
-			$res[$value['order_num']][] = $value;
-		}
-		$this->assign(array(
-			'res'		=>	$res,
-		));
-		$this->display();
-	}
-
+	
 	public function orderTmp() {
 		$res = array(
 			'error_no' => 0,
@@ -66,20 +51,109 @@ class OrderController extends Controller {
 	}
 
 
-	public function confirmOrder() {
+	public function confirm() {
+		$res = array(
+			'error_no' => 0,
+			'msg'	   => '',
+			'data'	   => array()
+		);
 		$oid  = I('get.oid','');
 		$list = D('orderTmp')->getBasicInfo($oid);
 		$orderInfo = json_decode($list['goods_info'],true);
 		foreach ($orderInfo as $key => $value) {
 			$goodsInfo = D('Goods')->getBasicInfo($orderInfo[$key]['goodsId']);
 			$orderInfo[$key] = array_merge($orderInfo[$key],$goodsInfo);
+			$tags = D('Tags')->where(array('id'=>$orderInfo[$key]['tag_id']))->find();
+			$tag_name = $tags['tag'];
+			$res['data']['goods_lists'][$key] = array(
+				'id'	=> $orderInfo[$key]['goodsId'],
+				'title' => $orderInfo[$key]['goods_name'],
+				'image' => $orderInfo[$key]['image'],
+				'desc'	=> $orderInfo[$key]['goods_info'],
+				'price' => $orderInfo[$key]['price'],
+				'tag'	=> $tag_name,
+				'num'	=> $orderInfo[$key]['count']
+			);
 		}
 		$id = session('id');
 		$where = array('user_id'=>$id);
 		$add = D('Address')->getList($where);
-		$user_add = $add['0'];
-		$this->assign('user',$user_add);
-		$this->assign('orderInfo',$orderInfo);
-		$this->display();
+		$res['data']['address'] = $add;
+		$res['data']['pay_type'] = array('id'=>1,'name'=>'余额支付','icon'=>'');
+		echo json_encode($res);die();
 	}
+
+
+	public function create () {
+		$oid = I('post.oid','');
+		$aid = I('post.aid','');
+		$pid = I('post.pid','');
+		$uid = session('id');
+		$res = array(
+			'error_no' => 0,
+			'msg'	   => '',
+			'data'	   => array()
+		);
+		
+		if (empty($uid) || empty($oid) || empty($aid) || empty($pid)) {
+			$res['error_no'] = 1;
+			$res['msg'] = "参数错误";
+			echo json_encode($res);
+			die();
+		}
+		$list = D('orderTmp')->getBasicInfo($oid);
+		$orderInfo = json_decode($list['goods_info'],true);
+		$money = 0;
+		foreach ($orderInfo as $key => $value) {
+			$goodsInfo = D('Goods')->getBasicInfo($orderInfo[$key]['goodsId']);
+			$goodsInfo['orderMoney'] = $value['count'] * $goodsInfo['price'];
+			$orderInfo[$key] = array_merge($orderInfo[$key],$goodsInfo);
+			$money += $goodsInfo['orderMoney'];
+		}
+		$orderData = array(
+			'user_id' => $uid,
+			'money' => $money,
+			'address_id' => $aid,
+			'pay_type' => $pid,
+			'createtime' => date('Y-m-d H:i:s'),
+			);
+		$orderId = D('order')->add($orderData);
+		if ($orderId) {
+			foreach ($orderInfo as $key => $value) {
+				$goodsData = array(
+					'order_id' 		=> $orderId,
+					'goods_id' 		=> $value['goodsId'],
+					'goods_price' 	=> $value['price'],
+					'goods_num' 	=> $value['count'],
+					'order_money' 	=> $value['orderMoney'],
+					'createtime' 	=> date('Y-m-d H:i:s'),
+					);
+				D('OrderGoods')->add($goodsData);
+			}
+			$db = M();
+            $db->startTrans();
+			$accountStatus = D('user')->handleAccount($uid, $money, 2); 
+			$orderStatus   = D('order')->where(array('id'=>$orderId))->save(array('pay_status'=>1,'status'=>1));
+
+			if ($accountStatus && $orderStatus) {
+				$db->commit();  
+			} else {
+				$db->rollback();  
+				$res['error_no'] = 2;
+				$res['msg'] = "余额不足";
+				echo json_encode($res);
+				die();
+			}
+			//
+		} else {
+			$res['error_no'] = 3;
+			$res['msg'] = "下单失败";
+			echo json_encode($res);
+			die();
+		}
+		$res['data']['id'] = $orderId;
+		echo json_encode($res);
+		die();
+	}
+
 }

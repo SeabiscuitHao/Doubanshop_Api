@@ -14,12 +14,10 @@ class CartController extends Controller {
 			'msg'		=> '',
 			'data'		=> array(),
 		);
-		$id = I('post.goods_id','');
-		// var_dump($id);die();
-		$price = I('post.price','');
-		$count = I('post.count','');
-		// $total_price = $price*$count;
-		$data = array(
+		$id 	= I('post.goods_id','');
+		$price  = I('post.price','');
+		$count 	= I('post.count','');
+		$data 	= array(
 			'image'			=> I('post.image',''),
 			'goods_id'		=> I('post.goods_id',''),
 			'goods_name'	=> I('post.goods_name',''),
@@ -30,7 +28,7 @@ class CartController extends Controller {
 		);
 		if (empty($id)) {
 			$res['error_no'] = 1;
-			$res['msg'] = '参数错误';
+			$res['msg'] 	 = '参数错误';
 			echo json_encode($res);die();
 		}
 
@@ -49,12 +47,12 @@ class CartController extends Controller {
 		}
 		if ($cart) {
 			$res['error_no'] = 0;
-			$res['msg'] = '';
-			$res['data'] = $data;
+			$res['msg'] 	 = '';
+			$res['data']	 = $data;
 			echo json_encode($res);die();
 		} else {
 			$res['error_no'] = 3;
-			$res['msg'] = '添加失败';
+			$res['msg'] 	 = '添加失败';
 			echo json_encode($res);die();
 		}
 	}

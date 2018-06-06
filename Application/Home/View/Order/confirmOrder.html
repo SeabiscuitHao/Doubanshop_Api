@@ -12,24 +12,28 @@
 <body>
 		<div class="oid-address">
 			<p>收货地址</p>
+		<volist name="user" id="vo">
 			<div class="goods-address">
 				<p>
 					收货人：
 					<span>
-					   {$user.username}   {$user.phone}
+					   {$vo.username}   {$vo.phone}
 					</span>
 				</p>
 				<p>
-					{$user.province}/{$user.city}/{$user.area}
+					{$vo.province}/{$vo.city}/{$vo.area}
 				</p>
 				<i class="iconfont">&#xe63b;</i>
 			</div>
+			<div style="height: 10px">
+			</div>
+		</volist>
 		</div>
 	<div class="oid-things">
 	    <p class="new-oid">豆瓣市集</p>
 		<volist name="orderInfo" id="vo" >
 			<div class="list-img clearfix ">
-				<img src="http://dbshop.com/{$vo.image}" alt="">
+				<img src="{$vo.image}" alt="">
 				<div class="img-about">
 					<p>{$vo.goods_name}</p>
 					<span class="oid-exp">{$vo.goods_info}</span>
@@ -71,20 +75,15 @@
 	</div>
 	<div class="oid-things oid-ways clearfix">
 	    <p>支付方式</p>
-	    <div class="list-oid clearfix ways-list one-way">
-	    	<span>
-                <img src="__PUBLIC__/Home/images/weixin.png" alt="">
-	    	    优惠券
-	    	</span>
-	    	<span></span>
-	    </div>
-	    <div class="list-oid clearfix ways-list">
-	    	<span>
-	    	    <img src="__PUBLIC__/Home/images/zhifubao.png" alt="">
-	    	   小计
-	    	</span>
-	    	<span></span>
-	    </div>
+	    <volist name="pay_type" id="vo">
+		    <div class="list-oid clearfix ways-list one-way">
+		    	<span>
+	                <img src="__PUBLIC__/Home/images/weixin.png" alt="">
+	                {$vo['name']}
+		    	</span>
+		    	<span></span>
+		    </div>
+	    </volist>
 	</div>
 	<div class="coupon-box ppiao">
 		<div class="coupon-title">
@@ -202,6 +201,27 @@
 			<a href="javascript:void(0)" class="car-newtrue"> 提交订单</a>
 		</div>
 	</div>
-	<script src="__PUBLIC__/Home/js/oid.js"></script>
+	<script src="__PUBLIC__/Home/js/oid.js">
+		
+	</script><script type="text/javascript">
+		$(function(){
+			$('.car-newtrue').click(function(){
+				var aid = 2;
+				var oid = {$_GET['oid']};
+				var pid = 1;
+				console.log(oid);
+				$.ajax({
+					url : "{:U('home/order/createorder')}",
+					type : "post",
+					dataType : "json",
+					data : {aid:aid, oid:oid, pid:pid},
+					success : function(res) {
+						console.log(res);
+					}
+				});
+			});
+		})
+		
+	</script>
 </body>
 </html>
