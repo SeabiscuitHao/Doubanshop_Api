@@ -6,14 +6,16 @@ use Think\Controller;
 class CartController extends Controller {
 
 	public function addcart() {
-		if (!session('id')) {
-			$this->error('请先登录',U('Home/User/login'));
-		}
 		$res = array(
 			'error_no'	=> 0,
 			'msg'		=> '',
 			'data'		=> array(),
 		);
+		if (!session('id')) {
+			$res['error_no'] = 2;
+			$res['msg']		 = "请先登录";
+			echo json_encode($res);die();
+		}
 		$id = I('post.goods_id','');
 		$price = I('post.price','');
 		$count = I('post.count','');
@@ -64,6 +66,11 @@ class CartController extends Controller {
 			'data'		=> array(),
 		);
 		$id = session('id');
+		if (!session('id')) {
+			$res['error_no'] = 2;
+			$res['msg']		 = "请先登录";
+			echo json_encode($res);die();
+		}
 		$cartList = D('Cart')->where(array('user_id'=>$id))->select();
 		if (empty($cartList)) {
 			$res['error_no'] = 1;
