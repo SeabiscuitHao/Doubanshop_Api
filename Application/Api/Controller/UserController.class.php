@@ -4,7 +4,6 @@ use Think\Controller;
 use Api\Model\UserModel;
 class UserController extends Controller {
 
-
 	public function logout() {
 		session(null);
 		$this->success('注销成功',U('Home/User/login'));
@@ -26,8 +25,15 @@ class UserController extends Controller {
 		$resTmp = D('User')->getUserInfoByPhone($phone);
 		if ($resTmp !== false) {
 			if ($resTmp['password'] == $password) {
-				session('id',$res['id']);
-				$res['data']['info']['id'] = $resTmp['id'];
+				
+				$token = md5($resTmp['id'] . time() . 'abcdefg');
+				$data = array(
+					'token'	=> $token,
+					'uid'	=> $resTmp['id'],
+				);
+				$add = D('Token')->add($data);
+				
+				$res['data']['info']['token'] = $token;
 				$res['data']['info']['phone'] = $resTmp['phone'];
 				$res['data']['info']['name'] = $resTmp['username']; 
 				echo json_encode($res);die();

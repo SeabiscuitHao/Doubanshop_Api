@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -16,10 +16,10 @@
     <![endif]-->
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="__PUBLIC__/admin/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/assets/css/animate.min.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/assets/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <link href="/Public/admin/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/admin/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Public/admin/assets/css/animate.min.css" rel="stylesheet">
+    <link href="/Public/admin/assets/css/style.min.css?v=4.0.0" rel="stylesheet">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -32,7 +32,7 @@
                 <ul class="nav" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            <span><img alt="image" class="img-circle" src="__PUBLIC__/admin/assets/img/profile_small.jpg" /></span>
+                            <span><img alt="image" class="img-circle" src="/Public/admin/assets/img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
@@ -57,7 +57,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="{:U('index/main')}"><i class="fa fa-columns"></i> <span class="nav-label">首页</span></a>
+                        <a class="J_menuItem" href="<?php echo U('index/main');?>"><i class="fa fa-columns"></i> <span class="nav-label">首页</span></a>
                     </li>
 
                     <li>
@@ -68,7 +68,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{:U('User/lists')}" data-index="0">用户管理</a>
+                                <a class="J_menuItem" href="<?php echo U('User/lists');?>" data-index="0">用户管理</a>
                             </li>
                         </ul>
                     </li>
@@ -81,10 +81,10 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{:U('Goods/lists')}" data-index="0">商品管理</a>
+                                <a class="J_menuItem" href="<?php echo U('Goods/lists');?>" data-index="0">商品管理</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="{:U('Banner/lists')}" data-index="0">广告管理</a>
+                                <a class="J_menuItem" href="<?php echo U('Banner/lists');?>" data-index="0">广告管理</a>
                             </li>
                         </ul>
                     </li>
@@ -96,7 +96,7 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{:U('Admin/Admin/lists')}">管理员管理</a>
+                                <a class="J_menuItem" href="<?php echo U('Admin/Admin/lists');?>">管理员管理</a>
                             </li>
                             <li>
                                 <a class="J_menuItem" href="index_v2.html">产品管理</a>
@@ -421,7 +421,7 @@
                                 <li class="m-t-xs">
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="__PUBLIC__/admin/assets/img/a7.jpg">
+                                            <img alt="image" class="img-circle" src="/Public/admin/assets/img/a7.jpg">
                                         </a>
                                         <div class="media-body">
                                             <small class="pull-right">46小时前</small>
@@ -435,7 +435,7 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="__PUBLIC__/admin/assets/img/a4.jpg">
+                                            <img alt="image" class="img-circle" src="/Public/admin/assets/img/a4.jpg">
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right text-navy">25小时前</small>
@@ -526,7 +526,7 @@
                 <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{:U('index/main')}" frameborder="0" data-id="index_v2.html" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<?php echo U('index/main');?>" frameborder="0" data-id="index_v2.html" seamless></iframe>
             </div>
             <div class="footer">
                 <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
@@ -627,14 +627,14 @@
             </a>
         </div>
     </div>
-    <script src="__PUBLIC__/admin/assets/js/jquery.min.js?v=2.1.4"></script>
-    <script src="__PUBLIC__/admin/assets/js/bootstrap.min.js?v=3.3.5"></script>
-    <script src="__PUBLIC__/admin/assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="__PUBLIC__/admin/assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="__PUBLIC__/admin/assets/js/plugins/layer/layer.min.js"></script>
-    <script src="__PUBLIC__/admin/assets/js/hplus.min.js?v=4.0.0"></script>
-    <script type="text/javascript" src="__PUBLIC__/admin/assets/js/contabs.min.js"></script>
-    <script src="__PUBLIC__/admin/assets/js/plugins/pace/pace.min.js"></script>
+    <script src="/Public/admin/assets/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Public/admin/assets/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/Public/admin/assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/Public/admin/assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Public/admin/assets/js/plugins/layer/layer.min.js"></script>
+    <script src="/Public/admin/assets/js/hplus.min.js?v=4.0.0"></script>
+    <script type="text/javascript" src="/Public/admin/assets/js/contabs.min.js"></script>
+    <script src="/Public/admin/assets/js/plugins/pace/pace.min.js"></script>
 </body>
 
 </html>

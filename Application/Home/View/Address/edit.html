@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> </title>
+
+<body>
+
+	<form action="{:U(Home/Address/doEdit)}" method="post">
+		<input type="hidden" name="id" value="{$info['id']}">
+		<div class="click-box">
+			<div class="add-head">
+				<span>新建地址</span>
+				<a href="javascript:void(0)">取消</a>
+			</div>
+			<div class="add-input">
+				<input type="text" placeholder="收货人姓名" class="name" name="username" value="{$info['username']}">
+			</div>
+			<div class="add-input">
+				<input type="text" placeholder="收货人电话号码" class='phone' name="phone" value="{$info['phone']}">
+			</div>
+			<div class="add-input clearfix">
+				<div class="intro-makecity">
+					<form class="form-inline clearfix">
+					    <div data-toggle="distpicker" class="new-add">
+					        <div class="form-group ">
+					          <label class="sr-only" for="province1"></label>
+					          <select class="form-control " id="province1" name="province" value="{$info['province']}"></select>
+					        </div>
+					        <div class="form-group">
+					          <label class="sr-only" for="city1"></label>
+					          <select class="form-control" id="city1" name="city" value="{$info['city']}"></select>
+					        </div>
+					        <div class="form-group">
+					          <label class="sr-only" for="district1"></label>
+					          <select class="form-control" id="district1" name="area" value="{$info['area']}"></select>
+					        </div>
+					    </div>
+					</form>
+				</div>
+			</div>
+			<div class="add-input">
+				<input type="text" placeholder="请输入详细地址，例街道号码，楼牌号" class="city-more" name="info" value="{$info['info']}">
+			</div>
+			<div class="add-button">
+				<input type="submit" name="" value="保存">
+			<!-- 	<a href="javascript:void(0)">保存</a> -->
+			</div>
+		</div>
+	</form>
+	<script src="__PUBLIC__/Home/js/main.js"></script>
+</body>
+</html>

@@ -11,21 +11,29 @@ class CartController extends Controller {
 			'msg'		=> '',
 			'data'		=> array(),
 		);
-		if (!session('id')) {
-			$res['error_no'] = 2;
-			$res['msg']		 = "请先登录";
-			echo json_encode($res);die();
+		$id    	 = I('post.goods_id','');
+		$count 	 = I('post.goods_num','');
+		$token   = I('post.token','');
+		$info 	 = D('Token')->getList();
+		foreach ($info as $key => $value) {
+			$uid = $value['id'];
 		}
-		$id = I('post.goods_id','');
-		$price = I('post.price','');
-		$count = I('post.count','');
-		$data = array(
-			'image'			=> I('post.image',''),
-			'goods_id'		=> I('post.goods_id',''),
-			'goods_name'	=> I('post.goods_name',''),
+		$where 	 = array('id'=>$id);
+		$info  	 = D('Goods')->getList($where);
+		foreach ($info as $key => $value) {
+			if ($value['id'] == $id) {
+				$price = $value['price'];
+				$image = $value['image'];
+				$goods_name = $value['goods_name'];
+			}
+		}
+		$data  = array(
+			'image'			=> $image,
+			'goods_id'		=> $id,
+			'goods_name'	=> $goods_name,
 			'goods_price'	=> $price,
 			'goods_num'		=> $count,
-			'user_id'		=> session('id'),
+			'user_id'		=> $uid,
 			'createtime'	=> date("Y-m-d,H:i:s")
 		);
 		if (empty($id)) {
@@ -33,14 +41,19 @@ class CartController extends Controller {
 			$res['msg']      = '参数错误';
 			echo json_encode($res);die();
 		}
-
 		$where = array(
-			'user_id'		=> session('id'),
+			'user_id'		=> $uid,
 			'goods_id'		=> $id, 
 		);
 		$str = D('Cart')->getList($where);
 		if (!empty($str)) {
 			$data = array(
+				'image'			=> $image,
+				'goods_id'		=> $id,
+				'goods_name'	=> $goods_name,
+				'goods_price'	=> $price,
+				'user_id'		=> $uid,
+				'createtime'	=> date("Y-m-d,H:i:s"),
 				'goods_num' => $str['0']['goods_num']+$count,
 			);
 			$cart = D('Cart')->where(array('id'=>$str['0']['id']))->save($data);
@@ -65,22 +78,14 @@ class CartController extends Controller {
 			'msg'		=> 'success',
 			'data'		=> array(),
 		);
-		$id = session('id');
-		if (!session('id')) {
-			$res['error_no'] = 2;
-			$res['msg']		 = "请先登录";
-			echo json_encode($res);die();
-		}
+		$token   = I('post.token','');
+		$where	 = array('token'=>$token);
+		$info 	 = D('Token')->getList($where);
+		$id 	 = $info[0]['id'];
 		$cartList = D('Cart')->where(array('user_id'=>$id))->select();
-		if (empty($cartList)) {
-			$res['error_no'] = 1;
-			$res['msg']		 = "参数错误";
-			echo json_encode($res);die();
-		} else {
-			$res['data']['cart'] = $cartList;
-			echo json_encode($res);
-			die();
-		}
+		$res['data']['cart'] = $cartList;
+		echo json_encode($res);
+		die();
 	}
 
 
