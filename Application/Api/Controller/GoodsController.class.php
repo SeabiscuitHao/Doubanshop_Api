@@ -30,7 +30,7 @@ class GoodsController extends Controller {
         $res['data']['info']['price']     = $lists['price'];
         $res['data']['info']['desc']      = $lists['goods_info'];
         $res['data']['info']['image']     = $lists['image'];
-        $res['data']['info']['cart_num']  = $num;
+        // $res['data']['info']['cart_num']  = $num;
         echo json_encode($res);die();
     }
 	

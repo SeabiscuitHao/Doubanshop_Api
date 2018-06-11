@@ -15,8 +15,9 @@ class CartController extends Controller {
 		$count 	 = I('post.goods_num','');
 		$token   = I('post.token','');
 		$info 	 = D('Token')->getList();
+
 		foreach ($info as $key => $value) {
-			$uid = $value['id'];
+			$uid = $value['uid'];
 		}
 		$where 	 = array('id'=>$id);
 		$info  	 = D('Goods')->getList($where);
@@ -81,7 +82,7 @@ class CartController extends Controller {
 		$token   = I('post.token','');
 		$where	 = array('token'=>$token);
 		$info 	 = D('Token')->getList($where);
-		$id 	 = $info[0]['id'];
+		$id 	 = $info[0]['uid'];
 		$cartList = D('Cart')->where(array('user_id'=>$id))->select();
 		$res['data']['cart'] = $cartList;
 		echo json_encode($res);
@@ -115,6 +116,11 @@ class CartController extends Controller {
 			}
 		} else {
 			$info['goods_num'] -= 1;
+			if ($info['goods_num'] < 0) {
+				$res['error_no'] = 3;
+				$res['msg']		 = '不能再减了';
+				echo json_encode($res);die();
+			}
 			$save = D('Cart')->where(array('id'=>$cid))->save($info);
 			if ($save) {
 				echo json_encode($res);die();

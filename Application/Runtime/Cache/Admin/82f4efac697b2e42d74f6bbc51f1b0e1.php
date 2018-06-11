@@ -24,11 +24,11 @@
                         <h5>新增广告</h5>
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal" action="<?php echo U('admin/banner/doadd');?>" method="post" target="_self" enctype="multipart/form-data">
+                        <form class="form-horizontal" action="<?php echo U('admin/admin/doadd');?>" method="post" target="_self" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">名字</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="title">
+                                    <input type="text" class="form-control" name="name">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
@@ -36,15 +36,29 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">电话号</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="url">
+                                    <input type="text" class="form-control" name="phone">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">密码</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="password">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">角色</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="url">
+                                <div class="col-sm-10">
+                                    <?php if(is_array($role)): $i = 0; $__LIST__ = $role;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="checkbox i-checks">
+                                            <label>
+                                                <input type="checkbox" value="<?php echo ($vo["id"]); ?>" name="role_id[]"> 
+                                                <?php echo ($vo["name"]); ?>
+                                            </label>
+                                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
+
                             </div>
                             <div class="hr-line-dashed"></div>
                     </div>

@@ -10,6 +10,26 @@ class IndexController extends Controller {
             'msg'       => '',
             'data'      => array()
         );
+
+        $token   = I('post.token','');
+
+        $idres    = D('Token')->getList();
+        foreach ($idres as $key => $value) {
+            if ($value['token'] == $token) {
+                $uid = $value['uid'];
+            }
+        }
+
+        $info    = D('Cart')->getList();
+        $num     = 0;
+        foreach ($info as $key => $value) {
+            if ($value['user_id'] == $uid) {
+                $num += $value['goods_num'];
+            }
+        }
+        $res['data']['cart_num'] = $num;
+
+
         foreach ($lists as $key => $value) {
             $tagInfo = '';
             $tags_id = $value['tag_id'];

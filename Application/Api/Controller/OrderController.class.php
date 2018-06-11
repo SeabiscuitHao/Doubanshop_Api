@@ -75,9 +75,9 @@ class OrderController extends Controller {
 				'num'	=> $orderInfo[$key]['count']
 			);
 		}
-		$id = session('id');
+		$id    = session('id');
 		$where = array('user_id'=>$id);
-		$add = D('Address')->getList($where);
+		$add   = D('Address')->getList($where);
 		$res['data']['address'] = $add;
 		$res['data']['pay_type'] = array('id'=>1,'name'=>'余额支付','icon'=>'');
 		echo json_encode($res);die();
